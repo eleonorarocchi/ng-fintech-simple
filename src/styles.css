@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.cute-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+.full-width {
+    width: 100%;
+}
+.half-width {
+    width: calc(50% - 3px);
+    margin-right: 3px;
+}
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+.mt-15 {
+    margin-top: 15px !important;
+}
+
+.mat-datepicker-input {
+    cursor: pointer;
+}

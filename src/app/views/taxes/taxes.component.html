@@ -1,0 +1,18 @@
+<div class="content">
+    <h2>Contribuente</h2>
+    <form [formGroup]="taxesForm" (submit)="sendTaxex()">
+        <er-taxpayer [formControlName]="'taxpayer'"></er-taxpayer>
+        <br/><br/>
+        <h2>Erario</h2>
+        <er-treasuries [formGroup]="taxesForm" [formArrayName]="'treasuries'"></er-treasuries>
+        <br/><br/><br/>
+        <h2>INPS</h2>
+        <er-inps [formGroup]="taxesForm" [formArrayName]="'taxes'"></er-inps>
+        <div class="subtotal balance inline">
+            <div>Saldo totale: {{totalBalance}}</div>
+        </div>
+        <br/><br/>
+        <button type="submit" mat-raised-button color="primary" aria-label="Salva" class="full-width"
+        [disabled]="taxesForm.status === 'INVALID'">Invia</button>
+    </form>
+</div>

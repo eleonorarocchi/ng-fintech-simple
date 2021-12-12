@@ -1,0 +1,25 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #cc33ca12;
+}
+
+mat-card {
+    width: 100%;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    color: aliceblue;
+    letter-spacing: 8px;
+    background: cornflowerblue;
+    padding: 10px;
+}
